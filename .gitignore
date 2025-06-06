@@ -1,0 +1,39 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Vendor directory
+vendor/
+
+# Go workspace cache
+go.work.sum
+go.work
+
+# Dependency directories (remove if you use go modules)
+Godeps/
+_vendor/
+
+# Go build cache
+$GOPATH/pkg/
+$GOPATH/bin/
+
+# VS Code
+.vscode/
+
+# JetBrains IDE
+.idea/
+
+# GoLand
+.go/
+
+# Env
+.env
+.env.example
+
+# tmp
+tmp/
