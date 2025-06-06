@@ -1,0 +1,40 @@
+server:
+  port: 8080
+  readTimeout: 30s
+  writeTimeout: 30s
+  idleTimeout: 60s
+  tlsCertFile: "/etc/ssl/certs/server.crt"
+  tlsKeyFile: "/etc/ssl/private/server.key"
+
+cache:
+  enabled: true
+  maxSize: 1000
+  ttl: 5m
+
+rateLimit:
+  enabled: true
+  capacity: 100
+  refillRate: 10
+
+loadBalance:
+  algorithm: "round-robin"
+  backends:
+    - url: "http://backend1.example.com"
+      weight: 1
+    - url: "http://backend2.example.com"
+      weight: 2
+
+health:
+  enabled: true
+  interval: 30s
+  timeout: 5s
+  path: "/health"
+
+tracing:
+  enabled: false
+  serviceName: "proxy"
+  serviceVersion: "1.0.0"
+  environment: "development"
+  jaegerEndpoint: "http://jaeger:14268/api/traces"
+  otlpEndpoint: "http://otel-collector:4317"
+  samplingRatio: 0.1
