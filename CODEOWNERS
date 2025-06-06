@@ -1,0 +1,27 @@
+# Global owners - these users will be requested for review on all PRs
+* @WillKirkmanM
+
+# Core architecture and configuration
+/internal/config/ @WillKirkmanM
+/internal/loadbalancer/ @WillKirkmanM
+/internal/middleware/ @WillKirkmanM
+
+# CI/CD and GitHub workflows
+/.github/ @WillKirkmanM
+/Dockerfile @WillKirkmanM
+/docker-compose.yml @WillKirkmanM
+
+# Documentation
+/README.md @WillKirkmanM
+/CONTRIBUTING.md @WillKirkmanM
+/SECURITY.md @WillKirkmanM
+/docs/ @WillKirkmanM
+
+# Testing
+/tests/ @WillKirkmanM
+/*_test.go @WillKirkmanM
+
+# Build and deployment
+/Makefile @WillKirkmanM
+/go.mod @WillKirkmanM
+/go.sum @WillKirkmanM
